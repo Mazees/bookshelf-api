@@ -218,10 +218,17 @@ Contoh response gagal:
 ```text
 .
 ├── src/
-│   ├── books.js
-│   ├── controller.js
-│   ├── routes.js
-│   └── server.js
+│   ├── server.js       # entry point server
+│   ├── exceptions/     # menyimpan class custom error
+│   ├── middlewares/    # custom middlewares
+│   ├── routes/         # kumpulan route
+│   │   └── index.js
+│   ├── server/
+│   │   └── index.js    # konfigurasi utama Express
+│   ├── services/       # logika bisnis / controller
+│   │   ├── books.js
+│   │   └── controller.js
+│   └── utils/          # helper untuk format response
 ├── package.json
 ├── package-lock.json
 └── README.md
