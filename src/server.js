@@ -1,4 +1,6 @@
 import app from "./server/index.js";
+import "dotenv/config";
+import { Pool } from "pg";
 
 const port = 9000;
 const host = "localhost";

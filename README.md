@@ -204,12 +204,14 @@ Penambahan dan pembaruan buku akan gagal jika:
 - `readPage` lebih besar daripada `pageCount`.
 - ID buku tidak ditemukan saat mengambil, memperbarui, atau menghapus buku.
 
-Contoh response gagal:
+Contoh response gagal dari exception middleware:
 
 ```json
 {
-  "status": "fail",
-  "message": "Gagal menambahkan buku. Mohon isi nama buku"
+  "code": 400,
+  "status": "failed",
+  "message": "Gagal menambahkan buku. Mohon isi nama buku",
+  "data": null
 }
 ```
 
