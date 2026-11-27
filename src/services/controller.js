@@ -22,7 +22,7 @@ export const addBooks = async (req, res, next) => {
   } = req.body ?? {};
 
   if (!name) {
-    return next(new InvariantError("Nama buku wajib diisi"));
+    return next(new InvariantError("Gagal menambahkan buku. Mohon isi nama buku"));
   }
 
   if (readPage > pageCount) {

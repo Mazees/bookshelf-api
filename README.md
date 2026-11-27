@@ -210,8 +210,7 @@ Contoh response gagal dari exception middleware:
 {
   "code": 400,
   "status": "failed",
-  "message": "Gagal menambahkan buku. Mohon isi nama buku",
-  "data": null
+  "message": "Gagal menambahkan buku. Mohon isi nama buku"
 }
 ```
 
